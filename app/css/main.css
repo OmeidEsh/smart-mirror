@@ -300,6 +300,11 @@ ul.calendar {
     margin-right: 10px;
 }
 
+.stock-price{
+    font-size: 25px;
+    font-weight:bold
+}
+
 .stock-change-positive {
     color: green;
 }

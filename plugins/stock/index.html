@@ -1,6 +1,6 @@
 <div ng-controller="Stock" class="stock">
     <div class="stock-information" ng-repeat="quote in stock">
-        <span class="dimmed" ng-bind="quote['Global Quote']['01. symbol']"></span>:  $<span fade ng-bind="quote['Global Quote']['05. price'] | number : 2"></span>   
+        <span class="dimmed" ng-bind="quote['Global Quote']['01. symbol']"></span>:  $<span class="stock-price" fade ng-bind="quote['Global Quote']['05. price'] | number : 2"></span>   
         <span ng-bind="quote['Global Quote']['09. change'] | number : 2" ng-class="{'stock-change-positive': quote['Global Quote']['09. change']>0, 'stock-change-negative': quote['Global Quote']['09. change']<0}"></span>   (
         <span ng-bind="quote['Global Quote']['10. change percent']" class="dimmed {'stock-change-positive': quote['Global Quote']['10. change percent']>0, 'stock-change-negative': quote['Global Quote']['10. change percent']<0}"></span>)
     </div>
