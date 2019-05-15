@@ -6,6 +6,7 @@ function Stock($scope, $http, $q, $interval) {
 		var promises = [];
 		angular.forEach(config.stock.names, function (symbol ) {
 			promises.push(Stocks.data.quote(symbol))
+			console.log("quote:", Stocks.data.quote(symbol))
 		});    
 		return $q.all(promises)
 	}
@@ -49,3 +50,8 @@ function Stock($scope, $http, $q, $interval) {
 
 angular.module('SmartMirror')
 	.controller('Stock', Stock);
+
+
+
+// <span ng-bind="(quote['Time Series (Daily)']['2019-05-14']['4. close']" class="dimmed"> </span>
+	
