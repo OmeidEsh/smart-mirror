@@ -18,8 +18,14 @@ function Stock($scope, $http, $q, $interval) {
 			} else {
 				stock.push(result);
 			}
+
+			// var x= data['10. Change percent];
+			// X= x.substring(0,x.length-1)?
+			// data.['10. Percent change']= x;
+
 			console.log("stock:", stock);
-			console.log("GlobalQuote:", stock.['Global Quote'].['10. change percent']);
+			// console.log("GlobalQuote:", stock.['Global Quote'].['10. change percent']);
+			
 			$scope.stock = stock;
 		}, function (error) {
 			console.log(error);
