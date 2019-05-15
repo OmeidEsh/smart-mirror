@@ -19,15 +19,15 @@ function Stock($scope, $http, $q, $interval) {
 				stock.push(result);
 			}
 
+			//A for loop to remove the % sign from the "10. change percent" so I can reduce it to 2 decimal point in the .html
 			for(var v of stock){
 				var x = v['Global Quote']['10. change percent'];
 				x = x.substring(0,x.length-1);
-				console.log("x:", x);
+				//console.log("x:", x);
 				v['Global Quote']['10. change percent']=x;
 			}
 
-			console.log("stock:", stock);
-			// console.log("GlobalQuote:", stock.['Global Quote'].['10. change percent']);
+			//console.log("stock:", stock);
 			
 			$scope.stock = stock;
 		}, function (error) {
