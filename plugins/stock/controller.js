@@ -19,9 +19,12 @@ function Stock($scope, $http, $q, $interval) {
 				stock.push(result);
 			}
 
-			// var x= data['10. Change percent];
-			// X= x.substring(0,x.length-1)?
-			// data.['10. Percent change']= x;
+			for(var v of stock){
+				var x = v['Global Quote']['10. change percent'];
+				x = x.substring(0,x.length-1);
+				console.log("x:", x);
+				v['Global Quote']['10. change percent']=x;
+			}
 
 			console.log("stock:", stock);
 			// console.log("GlobalQuote:", stock.['Global Quote'].['10. change percent']);
