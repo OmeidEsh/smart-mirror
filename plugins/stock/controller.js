@@ -19,7 +19,7 @@ function Stock($scope, $http, $q, $interval) {
 				stock.push(result);
 			}
 			console.log("stock:", stock);
-			console.log("GlobalQuote:", stock.Global Quote);
+			console.log("GlobalQuote:", stock['Global Quote']['10. change percent']);
 			$scope.stock = stock;
 		}, function (error) {
 			console.log(error);
