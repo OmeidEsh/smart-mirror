@@ -18,8 +18,8 @@ function Stock($scope, $http, $q, $interval) {
 			} else {
 				stock.push(result);
 			}
-			console.log(stock);
-			console.log(stock.GlobalQuote);
+			console.log("stock:", stock);
+			console.log("GlobalQuote:", stock.Global Quote);
 			$scope.stock = stock;
 		}, function (error) {
 			console.log(error);
