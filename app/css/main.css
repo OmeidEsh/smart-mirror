@@ -183,6 +183,7 @@ ul.calendar {
 }
 
 .calendar-name {
+  font-size: 50px; 
   display: none;
 }
 
