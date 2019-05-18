@@ -86,11 +86,13 @@ dt {
 }
 
 .date {
+    margin-left: 10px;
     font-size: 42px;
 }
 
 .time {
-    font-size: 110px;
+    font-size: 130px;
+    font-weight: bold;
 }
 
 .top-right {
