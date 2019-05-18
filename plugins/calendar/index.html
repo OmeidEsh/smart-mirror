@@ -2,21 +2,26 @@
     <li class="event" ng-repeat="event in calendar" ng-class="(calendar[$index - 1].label != event.label) ? 'day-marker' : ''">
         <div class="event-details">
 
+            <!-- Shows the day of the week and I added underline.-->
             <span class="day">
             <span class="day" ng-bind="event.startName"></span>
             <span ng-if="event.startName != event.endName"> - <span ng-bind="event.endName"></span></span>
             </span>
 
+            <!-- Show the name of the calendar i.e. General, Dr, Kunai -->
             <div class="calendar-name" ng-bind="event.calendarName"></div>
 
+            <!-- Shows the name of the event -->
             <span class="summary" ng-bind="event.SUMMARY"></span>
 
+            <!-- Shows the event's time -->
             <div class="details" ng-if="event.start.format('LT') != event.end.format('LT')">
                 <span ng-if="event.startName != event.endName"><span ng-bind="event.start.format('M/D')"></span> <span ng-bind="event.start.format('LT')"></span>                - <span ng-bind="event.end.format('M/D')"></span> <span ng-bind="event.end.format('LT')"></span></span>
                 <span ng-if="event.startName == event.endName"><span ng-bind="event.start.format('LT')"></span> - <span ng-bind="event.end.format('LT')"></span></span>
+                <span class="details" ng-if="event.start.format('LT') == event.end.format('LT')">All day</span>
             </div>
 
-            <div class="details" ng-if="event.start.format('LT') == event.end.format('LT')">All day</div>
+            <!-- <div class="details" ng-if="event.start.format('LT') == event.end.format('LT')">All day</div> -->
             
         </div>
     </li>
