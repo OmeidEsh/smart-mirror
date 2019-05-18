@@ -57,13 +57,12 @@
   </div>
 
 
-
+  <div class="middle-center"> <h1  ng-controller="Greeting" ng-bind="greeting" ng-cloak></h1> </div>
 
 
   <div class="container" ng-class="(listening == true)?'listening':'not-listening'">
     
     <div class="middle-center">
-      <h1 class="hide" ng-controller="Greeting" ng-bind="greeting" ng-cloak></h1>
       <div ng-include="'plugins/remote/index.html'"></div>
       <div ng-include="'plugins/soundcloud/index.html'"></div>
       <div ng-include="'plugins/map/index.html'"></div>
