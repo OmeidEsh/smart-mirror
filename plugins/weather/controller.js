@@ -4,6 +4,7 @@ function Weather($scope, $interval, $http, GeolocationService) {
 	var geoposition = {}
 	var weather = {}
 
+	//https://api.darksky.net/forecast/88e3f4a2f9ee5b519bbeaa0e4f1cf5aa/37.773972,-122.431297?units=si&lang=en&callback=JSON_CALLBACK
 	weather.get = function () {
 		return $http.jsonp('https://api.darksky.net/forecast/' + config.forecast.key + '/' +
             geoposition.coords.latitude + ',' + geoposition.coords.longitude + '?units=' +

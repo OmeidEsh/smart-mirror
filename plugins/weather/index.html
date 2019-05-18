@@ -15,7 +15,7 @@
     </div>
 
     <!-- This is the week's forcast (I switch the Max and Min lines to show Max on left and Min on right) -->
-    <div class="weather-week" ng-repeat="forecast in weeklyForecast.data" ng-if="$index > 0">
+    <div class="weather-week" ng-repeat="forecast in weeklyForecast.data" ng-if="$index >= 0">
         <div class="weather-week-day">
             <span class="day light-grey" ng-bind="forecast.day"></span>
             <canvas id="icon_weather_{{forecast.counter}}" width="33" height="25"></canvas>
