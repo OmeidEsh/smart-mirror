@@ -54,7 +54,7 @@ dt {
 }
 
 .container {
-    /*z-index: -1;*/
+    z-index: -1;
     /* so things are still selectable */
     position: fixed;
     top: 0;
