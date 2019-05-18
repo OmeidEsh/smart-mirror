@@ -164,16 +164,17 @@ ul.calendar {
     display: none;
     font-weight: bold;
     vertical-align: top;
+    text-decoration: underline;
 }
 
 .calendar span.summary {
-  font-size: 12px;
+  font-size: 18px;
   max-width: 300px;
 }
 
 .calendar .event-details .details {
     font-size: 12px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "HelveticaNeue-Medium", sans-serif;
     font-weight: lighter;
 }
 
