@@ -1,4 +1,4 @@
-<div ng-controller="Traffic">
+<div ng-controller="Traffic" ng-show="focus == 'default'">
     <div class="traffic" ng-repeat="traffic in trips">
         <div ng-show="!traffic.error" class="traffic-information">
             <span class="time-to" ng-bind="'traffic.time_to' | translate:traffic"></span>
