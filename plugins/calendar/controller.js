@@ -13,4 +13,14 @@ function Calendar($scope, $http, $interval, CalendarService) {
 }
 
 angular.module('SmartMirror')
-    .controller('Calendar', Calendar);
+	.controller('Calendar', Calendar);
+	
+
+
+
+	// .calendar .event-details .details {
+	// 	font-size: 12px;
+	// 	font-family: 'Open Sans', sans-serif;
+	// 	font-family: "HelveticaNeue-Medium", sans-serif;
+	// 	font-weight: lighter;
+	// }
