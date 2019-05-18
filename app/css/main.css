@@ -165,7 +165,6 @@ ul.calendar {
 }
 
 .calendar .day {
-    display: none;
     font-weight: bold;
     vertical-align: top;
     text-decoration: underline;
