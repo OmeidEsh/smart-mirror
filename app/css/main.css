@@ -176,7 +176,7 @@ ul.calendar {
   font-size: 12px;
   max-width: 200px;
   font-family: 'Open Sans', sans-serif;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .calendar .event-details .details {
@@ -185,6 +185,7 @@ ul.calendar {
 }
 
 .calendar-name {
+  margin-left: 10px;    
   font-size: 15px; 
   display: none;
 }
