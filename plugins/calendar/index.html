@@ -18,10 +18,9 @@
             <div class="details" ng-if="event.start.format('LT') != event.end.format('LT')">
                 <span ng-if="event.startName != event.endName"><span ng-bind="event.start.format('M/D')"></span> <span ng-bind="event.start.format('LT')"></span>                - <span ng-bind="event.end.format('M/D')"></span> <span ng-bind="event.end.format('LT')"></span></span>
                 <span ng-if="event.startName == event.endName"><span ng-bind="event.start.format('LT')"></span> - <span ng-bind="event.end.format('LT')"></span></span>
-                <span class="details" ng-if="event.start.format('LT') == event.end.format('LT')">All day</span>
             </div>
 
-            <!-- <div class="details" ng-if="event.start.format('LT') == event.end.format('LT')">All day</div> -->
+            <div class="details" ng-if="event.start.format('LT') == event.end.format('LT')">All day</div>
             
         </div>
     </li>
