@@ -157,7 +157,7 @@ ul.calendar {
 }
 
 .event {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 .calendar span {
@@ -180,6 +180,7 @@ ul.calendar {
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
+    margin-bottom: 50px;
 }
 
 .calendar-name {
