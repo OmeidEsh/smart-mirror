@@ -169,6 +169,7 @@ ul.calendar {
     font-weight: bold;
     vertical-align: top;
     text-decoration: underline;
+    font-size: 50px;
 }
 
 .calendar span.summary {
