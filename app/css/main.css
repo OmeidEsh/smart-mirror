@@ -109,6 +109,19 @@ dt {
     justify-content: center;
 }
 
+.greeting {
+    z-index: -1;
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    align-self: flex-start;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;  
+}
+
+
 .bottom-center {
     font-family: 'Open Sans', sans-serif;
     width: 100%;
