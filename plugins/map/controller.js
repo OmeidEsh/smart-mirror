@@ -2,7 +2,7 @@
 function MapController($scope, $http, GeolocationService, SpeechService, Focus) {
 
 	var map = {};
-	map.center = "Seattle, WA"; //default map locaiton
+	map.center = "San Francisco, CA"; //default map locaiton
 	map.zoom = 13; //default zoom is 13
 	// Get the current location of the mirror
 	GeolocationService.getLocation({ enableHighAccuracy: true }).then(function (geoposition) {

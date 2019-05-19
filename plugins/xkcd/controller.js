@@ -1,8 +1,15 @@
 function Xkcd($scope, $http, SpeechService, Focus) {
 
+
+
+	var min = 1;
+	var max = 2151;
+	var random = Math.floor((Math.random() * max) + min); 
+	console.log("random #:", random);	
+
     // Show xkcd comic
 	SpeechService.addCommand('image_comic', function () {
-		$http.jsonp("http://dynamic.xkcd.com/api-0/jsonp/comic?callback=JSON_CALLBACK")
+		$http.jsonp("http://dynamic.xkcd.com/api-0/jsonp/comic/" + random + "?callback=JSON_CALLBACK")
             .then(function (response) {
 	$scope.xkcd = response.data.img;
 	Focus.change("xkcd");
@@ -12,4 +19,7 @@ function Xkcd($scope, $http, SpeechService, Focus) {
 }
 
 angular.module('SmartMirror')
-    .controller('Xkcd', Xkcd);
+	.controller('Xkcd', Xkcd);
+	
+
+	//Sample URL with comic #142: http://dynamic.xkcd.com/api-0/jsonp/comic/142?callback=JSON_CALLBACK
