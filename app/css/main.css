@@ -25,6 +25,10 @@ h1 {
     font-size: 80px;
 }
 
+h2 {
+    font-size: 50px;
+}
+
 dt {
     font-weight: 600;
 }
