@@ -547,7 +547,6 @@ ul.calendar {
 
 .xkcd {
     font-size: 80px;
-    color: #fff;
     -webkit-filter: invert(100%);
     max-width: 100%;
 }
