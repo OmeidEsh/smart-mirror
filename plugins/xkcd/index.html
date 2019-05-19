@@ -1,4 +1,5 @@
 <!-- XKCD -->
-<div class="xkcd-container animate-grow" ng-show="focus == 'xkcd'">
-    <img ng-controller="Xkcd" class="xkcd animate-grow" ng-src="{{xkcd}}" />
+<div ng-controller="Xkcd" class="xkcd-container animate-grow" ng-show="focus == 'xkcd'">
+    <div class="dimmed xkcd animate-grow" ng-bind="{{titlexkcd}}">  </div>
+    <img class="xkcd animate-grow" ng-src="{{xkcd}}" />
 </div>

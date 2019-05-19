@@ -7,11 +7,13 @@ function Xkcd($scope, $http, SpeechService, Focus) {
 	SpeechService.addCommand('image_comic', function () {
 
 		var random = Math.floor((Math.random() * max) + min); 
-		console.log("random #:", random);	
+		//console.log("random #:", random);	
 
 		$http.jsonp("http://dynamic.xkcd.com/api-0/jsonp/comic/" + random + "?callback=JSON_CALLBACK")
             .then(function (response) {
 	$scope.xkcd = response.data.img;
+	$scope.titlexkcd = response.data.title;
+	console.log("Title: ", response.data.title)
 	Focus.change("xkcd");
 });
 	});
